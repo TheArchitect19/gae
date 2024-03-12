@@ -2,7 +2,8 @@
 using namespace std;
 
 int main() {
-    int n = 10;
+    int n ;
+    cin>>n;
 
     // Upper part of the pattern
     for (int i = 1; i <= n; i++) {
