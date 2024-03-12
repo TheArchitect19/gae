@@ -1,7 +1,31 @@
-#include "bits/stdc++.h"
+#include <iostream>
 using namespace std;
 
+int main() {
+    int n = 10;
 
-int main(){
-    cout<<"hello world"<<endl;
+    // Upper part of the pattern
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j < i; j++) {
+            cout << " ";
+        }
+
+        for (int k = i; k <= n; k++) {
+            cout << k << " ";
+        }
+        cout << endl;
+    }
+
+    // Lower part of the pattern
+    for (int i = n - 1; i >= 1; i--) {
+        for (int j = 1; j < i; j++) {
+            cout << " ";
+        }
+        for (int k = i; k <= n; k++) {
+            cout << k << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
 }
